@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './styles.scss';
 
 export const initialState = {
   title: 'Home',
@@ -7,7 +6,7 @@ export const initialState = {
 
 export type HomeState = Readonly<typeof initialState>;
 
-class Home extends React.Component<{}, HomeState> {
+export class Home extends React.Component<{}, HomeState> {
   readonly state: HomeState = initialState;
 
   render() {
@@ -20,5 +19,3 @@ class Home extends React.Component<{}, HomeState> {
     );
   }
 }
-
-export default Home;

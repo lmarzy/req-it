@@ -17,6 +17,7 @@
     "sass": "./node_modules/kickstart-sass/src/main.scss"
   },
   "dependencies": {
+    "containers": "^0.0.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1"
