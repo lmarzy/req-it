@@ -13,8 +13,7 @@
     "precommit": "pretty-quick --staged"
   },
   "alias": {
-    "sassHelpers": "./node_modules/kickstart-sass/src/01-helpers/helpers.scss",
-    "sass": "./node_modules/kickstart-sass/src/main.scss"
+    "sassHelpers": "./src/styles/01-helpers/helpers.scss"
   },
   "dependencies": {
     "containers": "^0.0.1",
