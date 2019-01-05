@@ -9,8 +9,12 @@
   "scripts": {
     "test": "jest",
     "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html/",
-    "precommit": "pretty-quick --staged"
+    "build": "parcel build ./src/index.html/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "alias": {
     "sassHelpers": "./src/styles/01-helpers/helpers.scss"
