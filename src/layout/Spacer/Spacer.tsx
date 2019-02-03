@@ -6,6 +6,6 @@ interface SpacerProps {
   size: number;
 }
 
-export const Spacer = styled.div<SpacerProps>`
-  margin-bottom: ${props => rem(spacers[props.size])};
+export const Spacer = styled.div`
+  margin-bottom: ${({ size }: SpacerProps) => rem(spacers[size])};
 `;
