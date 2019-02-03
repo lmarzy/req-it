@@ -2,7 +2,7 @@
 // UTILS/MEDIA
 // ========================================================================
 
-import { css } from 'styled-components';
+import { css, FlattenSimpleInterpolation } from 'styled-components';
 import { breakpoints, fontSizePx } from '../settings';
 
 export const media = Object.keys(breakpoints).reduce(
@@ -14,5 +14,5 @@ export const media = Object.keys(breakpoints).reduce(
     `;
     return acc;
   },
-  {} as Record<keyof typeof breakpoints, (l: TemplateStringsArray, ...p: any[]) => string>,
+  {} as Record<keyof typeof breakpoints, (l: TemplateStringsArray, ...p: any[]) => FlattenSimpleInterpolation>,
 );

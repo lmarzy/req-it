@@ -13,7 +13,7 @@
 
 import { css } from 'styled-components';
 import { fontFamily, fontSize, lineHeight } from '../../settings';
-import { media } from '../../utils';
+import { media, vr, rem } from '../../utils';
 
 export const page = css`
   html {
@@ -25,7 +25,8 @@ export const page = css`
     background-color: red;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    ${vr(16, 2)}
 
-    ${media[20]`background: purple;`}
+    ${media[20]`background-color: purple;`}
   }
 `;
