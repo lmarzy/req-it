@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import AppRoutes from '../../routes/routes.enum';
 
-import { Header, Footer } from './components';
+import { Header, Footer } from '../../layout';
 import { Home, About } from '../../routes';
 
 import GlobalStyles from '../../styles/global';

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Container } from '../../layout';
 
 export const initialState = {
   title: 'Home',
@@ -14,7 +15,9 @@ export class Home extends React.Component<{}, HomeState> {
 
     return (
       <div className="home">
-        <h1>{title}</h1>
+        <Container>
+          <h1>{title}</h1>
+        </Container>
       </div>
     );
   }

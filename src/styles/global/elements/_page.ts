@@ -11,21 +11,21 @@
 // background-color - Set for page background colour
 // -ms* - Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
 
+import { css } from 'styled-components';
 import { fontFamily, fontSize, lineHeight } from '../../settings';
+import { media } from '../../utils';
 
-export const page = `
+export const page = css`
   html {
     min-height: 100%;
     font-family: ${fontFamily};
     font-size: ${fontSize};
     line-height: ${lineHeight};
-    color: $col-text;
-    background-color: $col-bg;
+    color: yellow;
+    background-color: red;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-  }
 
-  .test {
-    margin-bottom: spacer(1);
+    ${media[20]`background: purple;`}
   }
 `;

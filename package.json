@@ -7,9 +7,10 @@
   "author": "lmarzy <me@phz3.net>",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf dist .cache",
     "test": "jest",
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html/"
+    "dev": "yarn clean && parcel ./src/index.html",
+    "build": "yarn clean && parcel build ./src/index.html"
   },
   "husky": {
     "hooks": {
