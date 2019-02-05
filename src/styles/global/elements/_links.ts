@@ -2,29 +2,31 @@
 // GLOBAL/ELEMENTS/LINKS
 // ========================================================================
 
+import { css } from 'styled-components';
+
 // Set default colour
 // Remove the gray background on active links in IE 10.
 // Set text decoration
 
-export const links = `
+export const links = css`
   a {
-    color: $col-links;
+    color: red;
     background-color: transparent;
     text-decoration: none;
     transition: $transition;
 
     &:visited {
-      color: $col-links-visited;
+      color: orange;
       text-decoration: none;
     }
 
     &:hover,
     &:focus {
-      color: $col-links-hover;
+      color: purple;
     }
 
     &:active {
-      color: $col-links-active;
+      color: blue;
     }
   }
 `;

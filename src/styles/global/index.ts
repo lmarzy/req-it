@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { boxSizing, reset, normalise } from './base';
 import { page, links, images, tables } from './elements';
 

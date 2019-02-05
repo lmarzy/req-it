@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Container, Spacer } from '../../layout';
 
 export const initialState = {
   title: 'Home',
@@ -15,11 +14,7 @@ export class Home extends React.Component<{}, HomeState> {
 
     return (
       <div className="home">
-        <Container>
-          <Spacer size={2}>
-            <h1>{title}</h1>
-          </Spacer>
-        </Container>
+        <h1>{title}</h1>
       </div>
     );
   }

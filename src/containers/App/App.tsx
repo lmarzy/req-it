@@ -3,22 +3,17 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import AppRoutes from '../../routes/routes.enum';
 
-import { Header, Footer } from '../../layout';
+import { Header, Footer } from './views';
 import { Home, About } from '../../routes';
 
 import GlobalStyles from '../../styles/global';
 
-interface AppProps {
-  a: string;
-  b: number;
-}
-
-export const App = ({ a, b }: AppProps) => (
+export const App = () => (
   <>
     <GlobalStyles />
     <Header />
     <Router>
-      <>
+      <main>
         <ul data-testid="nav">
           <li>
             <Link to={AppRoutes.Home}>Home</Link>
@@ -29,7 +24,7 @@ export const App = ({ a, b }: AppProps) => (
         </ul>
         <Route exact path={AppRoutes.Home} component={Home} />
         <Route path={AppRoutes.About} component={About} />
-      </>
+      </main>
     </Router>
     <Footer />
   </>
