@@ -1,4 +1,4 @@
-export * from './_typography';
+export { fontSizePx, lineHeightPx, fontUrl, fontFamily, fontSize, lineHeight } from './_typography';
 export * from './_colors';
 export * from './_layout';
 export * from './_breakpoints';

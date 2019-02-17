@@ -1,21 +1,20 @@
 import * as React from 'react';
+import { StyledHome } from './styled';
+import AppRoutes from '../routes.enum';
 
-export const initialState = {
-  title: 'Home',
-};
+export const Home = () => (
+  <StyledHome>
+    <div>
+      <h1>Req Ltd</h1>
+      <p>Front End Development</p>
 
-export type HomeState = Readonly<typeof initialState>;
-
-export class Home extends React.Component<{}, HomeState> {
-  readonly state: HomeState = initialState;
-
-  render() {
-    const { title } = this.state;
-
-    return (
-      <div className="home">
-        <h1>{title}</h1>
-      </div>
-    );
-  }
-}
+      <nav>
+        <ul>
+          <li>
+            <a href={AppRoutes.About}>About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </StyledHome>
+);

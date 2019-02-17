@@ -9,8 +9,9 @@
 export const fontSizePx = 16;
 export const lineHeightPx = fontSizePx * 1.5;
 
+export const fontUrl = 'https://fonts.googleapis.com/css?family=Rubik';
+
 // TYPE
-export const fontFamily =
-  "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'";
+export const fontFamily = 'Rubik, sans-serif';
 export const fontSize = '100%';
 export const lineHeight = lineHeightPx / fontSizePx;

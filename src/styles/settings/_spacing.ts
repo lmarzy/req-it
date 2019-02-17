@@ -3,7 +3,7 @@
 // ========================================================================
 
 import { lineHeightPx } from './_typography';
-import { rem } from '../utils/_px-to-rem';
+import { rem } from '../utils';
 
 const spacer = lineHeightPx / 4;
 const range = 8;

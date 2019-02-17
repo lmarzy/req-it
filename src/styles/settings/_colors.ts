@@ -3,8 +3,9 @@
 // ========================================================================
 
 // PAGE
-export const colBg = '#fff';
-export const colText = '#444';
+export const colBgA = '#2F2F37';
+export const colBgB = '#100e17';
+export const colText = '#fff';
 
 // LINKS
 export const collinks = '#055edb';

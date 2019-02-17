@@ -5,7 +5,7 @@
 // usage
 // rem(24);
 
-import { fontSizePx } from '../settings';
+import { fontSizePx } from '../settings/_typography';
 
 export const rem = (pxSize: number) => {
   const remSize = pxSize / fontSizePx;
