@@ -17,6 +17,6 @@ export const collinksvisited = '#f03b3b';
 export const colborders = '#ccc';
 
 export const colors = {
-  red: '#ff5656',
-  blue: '#4a9fff',
+  lightOrange: '#ffbf71',
+  darkOrange: '#ff8500',
 };

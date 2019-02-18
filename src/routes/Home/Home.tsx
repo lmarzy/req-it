@@ -1,20 +1,14 @@
 import * as React from 'react';
 import { StyledHome } from './styled';
-import AppRoutes from '../routes.enum';
+
+import { Nav } from './components/Nav/Nav';
 
 export const Home = () => (
   <StyledHome>
     <div>
       <h1>Req Ltd</h1>
       <p>Front End Development</p>
-
-      <nav>
-        <ul>
-          <li>
-            <a href={AppRoutes.About}>About</a>
-          </li>
-        </ul>
-      </nav>
+      <Nav />
     </div>
   </StyledHome>
 );
