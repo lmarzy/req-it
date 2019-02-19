@@ -7,4 +7,5 @@
 
 export const breakpoints = {
   10: 720,
+  20: 1100,
 } as { [key: string]: number };

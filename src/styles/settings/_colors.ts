@@ -3,8 +3,8 @@
 // ========================================================================
 
 // PAGE
-export const colBgA = '#2F2F37';
-export const colBgB = '#100e17';
+export const colBgA = '#241F2D';
+export const colBgB = '#17141d';
 export const colText = '#fff';
 
 // LINKS
