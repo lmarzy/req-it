@@ -3,18 +3,29 @@ import AppRoutes from '../../../routes.enum';
 
 import { StyledNav } from './styled';
 
+const navItems = [
+  {
+    link: 'About',
+    to: AppRoutes.About,
+  },
+  {
+    link: 'Experience',
+    to: AppRoutes.experience,
+  },
+  {
+    link: 'technology',
+    to: AppRoutes.technology,
+  },
+];
+
 export const Nav = () => (
   <StyledNav>
     <ul>
-      <li>
-        <a href={AppRoutes.About}>About</a>
-      </li>
-      <li>
-        <a href={AppRoutes.About}>Experience</a>
-      </li>
-      <li>
-        <a href={AppRoutes.About}>Technologies</a>
-      </li>
+      {navItems.map(item => (
+        <li key={item.link}>
+          <a href={item.to}>{item.link}</a>
+        </li>
+      ))}
     </ul>
   </StyledNav>
 );
