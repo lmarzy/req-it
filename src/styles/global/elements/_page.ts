@@ -18,7 +18,6 @@ import { media } from '../../mixins';
 export const page = css`
   html {
     min-height: 100%;
-    padding: 10px;
     font-family: ${fontFamily};
     font-size: ${fontSize};
     line-height: ${lineHeight};
@@ -26,13 +25,5 @@ export const page = css`
     background-color: #100e17;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-
-    ${media[10]`
-      padding: 15px;
-    `}
-
-    ${media[20]`
-      padding: 25px;
-    `}
   }
 `;

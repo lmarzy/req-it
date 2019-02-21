@@ -4,6 +4,7 @@ import { spacers, colors, colBgA, colBgB } from '../../styles/settings';
 import { media } from '../../styles/mixins';
 
 export const StyledHome = styled.header`
+  margin: 10px;
   height: calc(100vh - 20px);
   display: flex;
   align-items: center;
@@ -14,6 +15,7 @@ export const StyledHome = styled.header`
 
   div {
     text-align: center;
+    margin-top: -80px;
   }
 
   h1,
@@ -35,6 +37,7 @@ export const StyledHome = styled.header`
 
   ${media[10]`
     height: calc(100vh - 30px);
+    margin: 15px;
     h1 {
       font-size: ${rem(48)};
     }
@@ -44,7 +47,8 @@ export const StyledHome = styled.header`
   `}
 
   ${media[20]`
-    height: calc(100vh - 50px);
+    height: calc(100vh - 40px);
+    margin: 20px;
     h1,
     p {
       letter-spacing: 8px;
