@@ -1,14 +1,15 @@
 import * as React from 'react';
 import { StyledHome } from './styled';
 
-import { Nav } from './components/Nav/Nav';
+import { Heading, Nav, SocialLinks } from './components';
 
 export const Home = () => (
   <StyledHome>
     <div>
-      <h1>Req Ltd</h1>
+      <Heading />
       <p>Front End Development</p>
       <Nav />
+      <SocialLinks />
     </div>
   </StyledHome>
 );

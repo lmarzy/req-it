@@ -1,11 +1,16 @@
+import * as React from 'react';
 import styled from 'styled-components';
 import { rem } from '../../styles/utils';
 import { spacers } from '../../styles/settings';
 
 interface SpacerProps {
-  size: number;
+  marginSize?: number;
 }
 
-export const Spacer = styled.div`
-  margin-bottom: ${({ size }: SpacerProps) => rem(spacers[size])};
+const StyledSpacer = styled.div`
+  margin-bottom: ${({ marginSize }: SpacerProps) => spacers[marginSize || 4]};
 `;
+
+export const Spacer: React.FunctionComponent<SpacerProps> = ({ children, marginSize }) => (
+  <StyledSpacer marginSize={marginSize}>{children}</StyledSpacer>
+);

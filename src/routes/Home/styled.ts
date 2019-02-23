@@ -1,7 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { rem } from '../../styles/utils';
-import { spacers, colors, colBgA, colBgB } from '../../styles/settings';
+import { spacers, colors } from '../../styles/settings';
 import { media } from '../../styles/mixins';
+
+export const fadeIn = keyframes`
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
 
 export const StyledHome = styled.header`
   margin: 10px;
@@ -9,13 +16,21 @@ export const StyledHome = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to bottom right, ${colBgA}, ${colBgB});
+  background-image: linear-gradient(to bottom right, ${colors.greyA}, ${colors.greyB});
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   border-radius: 6px;
 
-  div {
-    text-align: center;
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 50%;
     margin-top: -80px;
+  }
+
+  nav {
+    width: 100%;
+    margin-bottom: ${spacers[4]};
   }
 
   h1,
@@ -24,23 +39,18 @@ export const StyledHome = styled.header`
     text-transform: uppercase;
   }
 
-  h1 {
-    font-size: ${rem(34)};
-    text-shadow: 2px 2px ${colors.darkOrange};
-  }
-
   p {
     margin-bottom: ${spacers[4]};
     font-size: ${rem(14)};
     text-shadow: 2px 2px 5px #000;
+    opacity: 0;
+    transform: scale(0.7);
+    animation: ${fadeIn} 600ms 600ms ease-in forwards;
   }
 
   ${media[10]`
     height: calc(100vh - 30px);
     margin: 15px;
-    h1 {
-      font-size: ${rem(48)};
-    }
     p {
       font-size: ${rem(16)};
     }
@@ -52,9 +62,6 @@ export const StyledHome = styled.header`
     h1,
     p {
       letter-spacing: 8px;
-    }
-    h1 {
-      font-size: ${rem(60)};
     }
     p {
       font-size: ${rem(18)};

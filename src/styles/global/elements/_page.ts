@@ -12,8 +12,7 @@
 // -ms* - Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
 
 import { css } from 'styled-components';
-import { fontFamily, fontSize, lineHeight, colText } from '../../settings';
-import { media } from '../../mixins';
+import { fontFamily, fontSize, lineHeight, spacers } from '../../settings';
 
 export const page = css`
   html {
@@ -21,9 +20,13 @@ export const page = css`
     font-family: ${fontFamily};
     font-size: ${fontSize};
     line-height: ${lineHeight};
-    color: ${colText};
+    color: white;
     background-color: #100e17;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+  }
+
+  main {
+    padding: ${spacers[4]} ${spacers[2]};
   }
 `;

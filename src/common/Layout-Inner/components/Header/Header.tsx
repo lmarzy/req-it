@@ -1,7 +1,10 @@
 import * as React from 'react';
+import { StyledHeader } from './styled';
+import { Logo, Nav } from './components';
 
-export const Header = () => (
-  <header>
-    <h1>React Typescript App</h1>
-  </header>
+export const Header: React.FunctionComponent = () => (
+  <StyledHeader>
+    <Logo />
+    <Nav />
+  </StyledHeader>
 );

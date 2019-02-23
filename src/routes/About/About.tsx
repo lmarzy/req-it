@@ -2,6 +2,6 @@ import * as React from 'react';
 
 export class About extends React.Component {
   render() {
-    return <h1>About</h1>;
+    return <h2>About</h2>;
   }
 }

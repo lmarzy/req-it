@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { colors } from '../../styles/settings';
 
 export const StyledLink = styled.a`
   display: inline-block;
-  color: #7a7a8c;
+  color: white;
   text-decoration: none;
   transition: background 800ms ease-in;
   -webkit-background-clip: text;
@@ -10,6 +11,6 @@ export const StyledLink = styled.a`
   &:hover,
   &:focus {
     color: transparent;
-    background-image: linear-gradient(to right, #ffbf71, #ff8500);
+    background-image: linear-gradient(to right, ${colors.red}, ${colors.orange});
   }
 `;

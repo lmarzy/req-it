@@ -6,6 +6,6 @@
 // values are used to allow multiple breakpoitns to be set based on content and not devices
 
 export const breakpoints = {
-  10: 720,
+  10: 600,
   20: 1100,
 } as { [key: string]: number };
