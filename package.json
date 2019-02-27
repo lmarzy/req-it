@@ -9,6 +9,7 @@
   "scripts": {
     "clean": "rm -rf dist .cache",
     "test": "jest",
+    "cypress:open": "cypress open",
     "dev": "yarn clean && parcel ./src/index.html",
     "build": "yarn clean && parcel build ./src/index.html"
   },
@@ -21,7 +22,11 @@
     "sassHelpers": "./src/styles/01-helpers/helpers.scss"
   },
   "dependencies": {
+    "apollo-boost": "^0.1.28",
+    "graphql": "^14.1.1",
+    "graphql-tag": "^2.10.1",
     "react": "^16.8.2",
+    "react-apollo": "^2.4.1",
     "react-dom": "^16.8.2",
     "react-router-dom": "^4.3.1"
   },
@@ -31,6 +36,7 @@
     "@types/react-dom": "^16.0.11",
     "@types/react-router-dom": "^4.3.1",
     "@types/styled-components": "^4.1.8",
+    "cypress": "^3.1.5",
     "husky": "^1.2.1",
     "jest": "^24.1.0",
     "lint-staged": "^8.1.0",

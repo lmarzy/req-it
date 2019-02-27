@@ -45,7 +45,7 @@ export const StyledHome = styled.header`
     text-shadow: 2px 2px 5px #000;
     opacity: 0;
     transform: scale(0.7);
-    animation: ${fadeIn} 600ms 600ms ease-in forwards;
+    animation: ${fadeIn} 400ms 400ms ease-in forwards;
   }
 
   ${media[10]`

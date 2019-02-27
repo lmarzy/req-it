@@ -7,7 +7,7 @@ export const Home = () => (
   <StyledHome>
     <div>
       <Heading />
-      <p>Front End Development</p>
+      <p>Front-End Development</p>
       <Nav />
       <SocialLinks />
     </div>

@@ -1,6 +1,6 @@
 export { fontSizePx, lineHeightPx, fontUrl, fontFamily, fontSize, lineHeight } from './_typography';
-export * from './_colors';
-export * from './_layout';
-export * from './_breakpoints';
-export * from './_font-sizes';
-export * from './_spacing';
+export { colors } from './_colors';
+export { maxWidth } from './_layout';
+export { breakpoints } from './_breakpoints';
+export { fontSizes } from './_font-sizes';
+export { spacers } from './_spacing';

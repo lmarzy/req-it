@@ -2,4 +2,4 @@
 // SETTINGS/LAYOUT
 // ========================================================================
 
-export const maxWidth = '1024px';
+export const maxWidth = '1124px';

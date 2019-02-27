@@ -1,7 +1,22 @@
 import * as React from 'react';
+import { StyledAbout } from './styled';
+
+import { PageHeader } from '../../common';
 
 export class About extends React.Component {
   render() {
-    return <h2>About</h2>;
+    return (
+      <>
+        <PageHeader title="About" />
+        <StyledAbout>
+          <div>
+            <p>Front-end web developer from Nottinghamshire in the UK</p>
+          </div>
+          <div>
+            <p>Img</p>
+          </div>
+        </StyledAbout>
+      </>
+    );
   }
 }

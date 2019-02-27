@@ -2,15 +2,28 @@ import * as React from 'react';
 import { IconLink } from '../../../../common';
 import { StyledSocialLinks } from './styled';
 
+const links = [
+  {
+    name: 'Github',
+    url: 'https://github.com/lmarzy',
+  },
+  {
+    name: 'Linkedin',
+    url: 'http://www.linkedin.com/pub/lee-marsden/1b/278/980',
+  },
+  {
+    name: 'Blog',
+    url: 'http://openbracket.co.uk',
+  },
+];
+
 export const SocialLinks = () => (
   <StyledSocialLinks>
-    <li>
-      <span>Linkedin</span>
-      <IconLink url="http://www.linkedin.com/pub/lee-marsden/1b/278/980" name="linkedin" />
-    </li>
-    <li>
-      <span>Blog</span>
-      <IconLink url="http://openbracket.co.uk" name="pencil" />
-    </li>
+    {links.map(link => (
+      <li key={link.name}>
+        <span>{link.name}</span>
+        <IconLink url={link.url} name={link.name.toLowerCase()} />
+      </li>
+    ))}
   </StyledSocialLinks>
 );

@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { PageHeader } from '../../common';
 
 export const Technology = () => (
-  <div>
-    <h1>Technology</h1>
-  </div>
+  <>
+    <PageHeader title="Technology" />
+  </>
 );

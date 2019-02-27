@@ -1,18 +1,20 @@
-import { About, Experience, Technology } from './index';
+import { About } from './About/About';
+import { Experience } from './Experience/Experience';
+import { Technology } from './Technology/Technology';
 
 export const routes = [
   {
-    route: '/about',
+    path: '/about',
     linkName: 'About',
     component: About,
   },
   {
-    route: '/experiance',
+    path: '/experience',
     linkName: 'Experience',
     component: Experience,
   },
   {
-    route: '/technology',
+    path: '/technology',
     linkName: 'Technology',
     component: Technology,
   },

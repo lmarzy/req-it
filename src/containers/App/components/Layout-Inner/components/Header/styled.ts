@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { colors, spacers } from '../../../../styles/settings';
-import { rem } from '../../../../styles/utils';
+import { colors, spacers } from '../../../../../../styles/settings';
+import { rem } from '../../../../../../styles/utils';
 
 export const StyledHeader = styled.header`
   display: flex;

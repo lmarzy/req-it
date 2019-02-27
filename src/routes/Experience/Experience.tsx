@@ -1,7 +1,10 @@
 import * as React from 'react';
+import { PageHeader } from '../../common';
+import { ExperienceList } from '../../containers/Experience-List/Experience-List';
 
 export const Experience = () => (
-  <div>
-    <h1>Experience</h1>
-  </div>
+  <>
+    <PageHeader title="Experience" />
+    <ExperienceList />
+  </>
 );

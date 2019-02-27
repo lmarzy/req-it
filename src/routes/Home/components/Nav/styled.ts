@@ -6,12 +6,25 @@ import { rem } from '../../../../styles/utils';
 import { fadeIn } from '../../styled';
 
 export const StyledNav = styled.nav`
-  opacity: 0;
-  transform: scale(0.7);
-  animation: ${fadeIn} 600ms 1200ms ease-in forwards;
+  li {
+    opacity: 0;
+    transform: scale(0.7);
+  }
 
   li:not(:last-child) {
     margin-bottom: ${spacers[2]};
+  }
+
+  li:nth-child(1) {
+    animation: ${fadeIn} 400ms 800ms ease-in forwards;
+  }
+
+  li:nth-child(2) {
+    animation: ${fadeIn} 600ms 1100ms ease-in forwards;
+  }
+
+  li:nth-child(3) {
+    animation: ${fadeIn} 800ms 1500ms ease-in forwards;
   }
 
   a {

@@ -7,7 +7,7 @@ export const StyledSocialLinks = styled.ul`
   display: flex;
   opacity: 0;
   transform: scale(0.7);
-  animation: ${fadeIn} 600ms 1800ms ease-in forwards;
+  animation: ${fadeIn} 400ms 2200ms ease-in forwards;
 
   li {
     padding: 0 4px;

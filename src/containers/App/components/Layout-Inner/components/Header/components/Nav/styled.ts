@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { rem } from '../../../../../../styles/utils';
-import { colors, spacers } from '../../../../../../styles/settings';
-import { media } from '../../../../../../styles/mixins';
+import { rem } from '../../../../../../../../styles/utils';
+import { colors, spacers } from '../../../../../../../../styles/settings';
+import { media } from '../../../../../../../../styles/mixins';
 
 export const StyledNavList = styled.ul`
   display: flex;
@@ -20,19 +20,20 @@ export const StyledNavList = styled.ul`
     color: ${colors.greyC};
 
     &.active {
-      background-color: ${colors.greyD};
+      background-color: ${colors.greyA};
       color: white;
       cursor: default;
 
       &:hover,
       &:focus {
-        background: ${colors.greyD};
+        background: ${colors.greyA};
+        color: white;
       }
     }
 
     &:hover,
     &:focus {
-      background-image: linear-gradient(${colors.red}, ${colors.orange});
+      background-color: ${colors.greyD};
       color: white;
     }
   }
