@@ -21,7 +21,7 @@ export const App = () => (
         <Route exact path="/" component={Home} />
         <LayoutInner>
           {routes.map(route => (
-            <Route key={route.linkName} path={route.path} component={route.component} />
+            <Route exact key={route.linkName} path={route.path} component={route.component} />
           ))}
         </LayoutInner>
       </Switch>

@@ -6,13 +6,17 @@ import { routes } from '../../../../../../../../routes/routes';
 export const Nav: React.FunctionComponent = () => (
   <nav>
     <StyledNavList>
-      {routes.map(route => (
-        <li key={route.path}>
-          <NavLink to={route.path} activeClassName="active">
-            {route.linkName}
-          </NavLink>
-        </li>
-      ))}
+      {routes.map(route => {
+        if (route.linkName !== 'ExperienceDetails') {
+          return (
+            <li key={route.path}>
+              <NavLink to={route.path} activeClassName="active">
+                {route.linkName}
+              </NavLink>
+            </li>
+          );
+        }
+      })}
     </StyledNavList>
   </nav>
 );

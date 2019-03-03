@@ -15,6 +15,8 @@ export const StyledPageheader = styled.header`
   }
 
   ${media[10]`
+    margin-bottom: ${spacers[8]};
+
     h2 {
       font-size: ${rem(28)};
     }

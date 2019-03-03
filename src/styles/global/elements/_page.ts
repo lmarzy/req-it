@@ -13,6 +13,7 @@
 
 import { css } from 'styled-components';
 import { fontFamily, fontSize, lineHeight, spacers } from '../../settings';
+import { media } from '../../mixins';
 
 export const page = css`
   html {
@@ -20,7 +21,7 @@ export const page = css`
     font-family: ${fontFamily};
     font-size: ${fontSize};
     line-height: ${lineHeight};
-    color: white;
+    color: #ccc;
     background-color: #100e17;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -28,5 +29,9 @@ export const page = css`
 
   main {
     padding: ${spacers[4]} ${spacers[2]};
+
+    ${media[15]`
+      padding: ${spacers[6]} ${spacers[2]};
+    `}
   }
 `;

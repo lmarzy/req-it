@@ -7,13 +7,17 @@ import { StyledNav } from './styled';
 export const Nav = () => (
   <StyledNav>
     <ul>
-      {routes.map(route => (
-        <li key={route.path}>
-          <NavLink to={route.path} activeClassName="active">
-            {route.linkName}
-          </NavLink>
-        </li>
-      ))}
+      {routes.map(route => {
+        if (route.linkName !== 'ExperienceDetails') {
+          return (
+            <li key={route.path}>
+              <NavLink to={route.path} activeClassName="active">
+                {route.linkName}
+              </NavLink>
+            </li>
+          );
+        }
+      })}
     </ul>
   </StyledNav>
 );
