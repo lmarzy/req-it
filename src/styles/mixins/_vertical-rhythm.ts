@@ -9,7 +9,7 @@
 import { css } from 'styled-components';
 import { fontSizePx, lineHeightPx } from '../settings';
 
-export const vr = (size: number, multiplier: number) => css`
+export const vr = (size: number, multiplier: number = 1) => css`
   font-size: ${size / fontSizePx}rem;
   line-height: ${(Math.ceil(size / lineHeightPx) * (lineHeightPx * multiplier)) / size};
 `;

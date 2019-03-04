@@ -41,7 +41,7 @@ export const ExDetails: React.FunctionComponent<ExperienceInformationProps> = ({
       return (
         <>
           <Overview company={company} from={from} to={to} position={position} />
-          <Content content={content} tech={tech} />
+          <Content content={content} tech={tech} tools={tools} backend={backend} />
         </>
       );
     }}

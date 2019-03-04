@@ -25,7 +25,13 @@ export const StyledOverview = styled.div`
   }
 
   ${media[10]`
-    grid-template-areas: "logo from to position"
+    grid-template-areas: "logo from to position";
+  `}
+
+  ${media[15]`
+    grid-gap: ${spacers[8]};
+    grid-template-columns: auto auto auto 1fr;
+    padding-left: ${rem(15)};
   `}
 `;
 
