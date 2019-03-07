@@ -2,9 +2,9 @@ import * as React from 'react';
 import { Query } from 'react-apollo';
 
 import { TECHNOLOGIES_QUERY } from './technology.query';
-import { TechnologiesModel } from './technology.model';
 
 import { PageHeader } from '../../components';
+import { TechnologiesList } from './components/technologies-list/technologies-list';
 
 export const Technology = () => (
   <Query query={TECHNOLOGIES_QUERY}>
@@ -16,12 +16,8 @@ export const Technology = () => (
 
       return (
         <>
-          <PageHeader title="Experience" />
-          <ul>
-            {technologies.map((tech: TechnologiesModel) => (
-              <li key={tech.id}>{tech.technology}</li>
-            ))}
-          </ul>
+          <PageHeader title="Technology" />
+          <TechnologiesList technologies={technologies} />
         </>
       );
     }}

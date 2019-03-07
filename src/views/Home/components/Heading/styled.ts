@@ -3,7 +3,7 @@ import { rem } from '../../../../styles/utils';
 import { colors } from '../../../../styles/settings';
 import { media } from '../../../../styles/mixins';
 
-import { fadeIn } from '../../styled';
+import { fadeIn } from '../../../../styles/animation';
 
 export const StyledHeader = styled.h1`
   display: inline-block;

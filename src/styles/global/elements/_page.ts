@@ -14,6 +14,7 @@
 import { css } from 'styled-components';
 import { fontFamily, fontSize, lineHeight, spacers } from '../../settings';
 import { media } from '../../mixins';
+import { rem } from '../../utils';
 
 export const page = css`
   html {
@@ -31,7 +32,7 @@ export const page = css`
     padding: ${spacers[4]} ${spacers[2]};
 
     ${media[15]`
-      padding: ${spacers[6]} ${spacers[2]};
+      padding: ${rem(36)} 0 ${rem(72)} 0;
     `}
   }
 `;

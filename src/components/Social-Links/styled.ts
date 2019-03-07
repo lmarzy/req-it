@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { hiddenVisually } from '../../../../styles/mixins';
+import { hiddenVisually } from '../../styles/mixins';
 
-import { fadeIn } from '../../styled';
+import { fadeIn } from '../../styles/animation';
 
 export const StyledSocialLinks = styled.ul`
   display: flex;

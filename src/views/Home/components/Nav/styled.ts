@@ -3,7 +3,7 @@ import { spacers, colors } from '../../../../styles/settings';
 import { media } from '../../../../styles/mixins';
 import { rem } from '../../../../styles/utils';
 
-import { fadeIn } from '../../styled';
+import { fadeIn } from '../../../../styles/animation';
 
 export const StyledNav = styled.nav`
   li {

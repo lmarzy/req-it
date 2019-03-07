@@ -2,13 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import { rem } from '../../styles/utils';
 import { spacers, colors } from '../../styles/settings';
 import { media } from '../../styles/mixins';
-
-export const fadeIn = keyframes`
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-`;
+import { fadeIn } from '../../styles/animation';
 
 export const StyledHome = styled.header`
   margin: 10px;

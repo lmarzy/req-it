@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IconLink } from '../../../../components';
+import { IconLink } from '../';
 import { StyledSocialLinks } from './styled';
 
 const links = [

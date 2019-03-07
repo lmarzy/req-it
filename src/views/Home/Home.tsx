@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { StyledHome } from './styled';
 
-import { Heading, Nav, SocialLinks } from './components';
+import { SocialLinks } from '../../components';
+import { Heading, Nav } from './components';
 
 export const Home = () => (
   <StyledHome>
